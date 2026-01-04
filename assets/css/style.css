@@ -1,58 +1,87 @@
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #ffffff;
-  color: #111827;
-  line-height: 1.75;
+  font-family: system-ui, sans-serif;
+  background: #f8fafc;
+  color: #1f2937;
+  line-height: 1.7;
 }
 
 .hero {
-  padding: 80px 20px 40px;
+  background: #020617;
+  color: white;
+  padding: 80px 20px;
+}
+
+.hero-content {
   max-width: 900px;
   margin: auto;
 }
 
 .hero h1 {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   margin-bottom: 5px;
 }
 
 .hero h2 {
   font-weight: normal;
-  color: #374151;
-  margin-top: 0;
+  color: #93c5fd;
 }
 
-.hero p {
-  max-width: 600px;
-  color: #4b5563;
-}
-
-.links a {
-  margin-right: 16px;
+.buttons a {
+  display: inline-block;
+  margin-right: 12px;
+  margin-top: 15px;
+  padding: 10px 22px;
+  background: #2563eb;
+  color: white;
   text-decoration: none;
-  color: #2563eb;
-  font-weight: 500;
+  border-radius: 6px;
 }
 
-.content {
+.container {
   max-width: 900px;
   margin: auto;
-  padding: 20px;
-}
-
-section {
-  margin-top: 50px;
+  padding: 50px 20px;
 }
 
 h3 {
-  font-size: 1.2rem;
-  margin-bottom: 15px;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.project {
+  background: white;
+  padding: 22px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.project ul {
+  padding-left: 18px;
+}
+
+.tech {
+  font-size: 0.9rem;
+  color: #475569;
+  margin-top: 8px;
 }
 
 footer {
-  max-width: 900px;
-  margin: 80px auto 40px;
-  padding: 0 20px;
-  color: #6b7280;
+  text-align: center;
+  padding: 30px;
+  background: #e5e7eb;
 }
