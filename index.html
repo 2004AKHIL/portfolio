@@ -3,112 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Akhil Kore | Machine Learning Portfolio</title>
+  <title>Akhil Kore | Machine Learning Engineer</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<script src="assets/js/script.js"></script>
 <body>
 
 <header class="hero">
-  <h1>Akhil Kore</h1>
-  <h2>Aspiring Machine Learning Engineer</h2>
-  <p>CSE (AI & ML) undergraduate focused on imbalanced learning, NLP, and real-world ML systems</p>
-  <div class="buttons">
-    <a href="resume.pdf" target="_blank">Resume</a>
-    <a href="https://github.com/" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+  <div class="hero-content">
+    <h1>Akhil Kore</h1>
+    <h2>Machine Learning Engineer</h2>
+    <p>
+      Focused on imbalanced learning, NLP pipelines, and healthcare machine learning.
+      Experienced in building reliable, evaluation-driven ML systems.
+    </p>
+    <div class="buttons">
+      <a href="resume.pdf" target="_blank">Resume</a>
+      <a href="https://github.com/" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+    </div>
   </div>
 </header>
 
-<section>
-  <h3>About Me</h3>
+<section class="container">
+  <h3>About</h3>
   <p>
-    Computer Science (AI & ML) undergraduate with hands-on experience in building
-    end-to-end machine learning pipelines. Strong focus on imbalanced datasets,
-    healthcare analytics, NLP, object detection, and rigorous model evaluation.
+    I am a Computer Science (AI & ML) undergraduate with hands-on experience
+    building end-to-end machine learning pipelines. My work focuses on handling
+    imbalanced healthcare datasets, NLP-based text classification, and object
+    detection systems. I have conducted comparative research on SMOTE variants,
+    achieving strong minority-class performance and contributing to a
+    conference-accepted publication.
   </p>
 </section>
 
-<section>
+<section class="container">
   <h3>Skills</h3>
-  <ul>
-    <li><b>Programming:</b> Python, C/C++, Java</li>
-    <li><b>Machine Learning:</b> Regression, Classification, Imbalanced Learning (SMOTE), NLP, Object Detection</li>
-    <li><b>Libraries:</b> Scikit-Learn, Imbalanced-Learn, Pandas, NumPy, CatBoost, XGBoost, NLTK, YOLOv8</li>
-    <li><b>Core CS:</b> DSA, OOP, OS, DBMS, Software Engineering</li>
-    <li><b>Tools:</b> Git, GitHub, Jupyter, VS Code, Oracle Cloud</li>
-  </ul>
+
+  <div class="grid">
+    <div class="card">
+      <h4>Machine Learning</h4>
+      <p>Regression, Classification, Imbalanced Learning, NLP, Object Detection</p>
+    </div>
+
+    <div class="card">
+      <h4>Libraries & Frameworks</h4>
+      <p>Scikit-Learn, Pandas, NumPy, CatBoost, XGBoost, NLTK, YOLOv8</p>
+    </div>
+
+    <div class="card">
+      <h4>Core CS</h4>
+      <p>DSA, OOP, Operating Systems, DBMS, Software Engineering</p>
+    </div>
+
+    <div class="card">
+      <h4>Tools</h4>
+      <p>Git, GitHub, Jupyter Notebook, VS Code, Oracle Cloud</p>
+    </div>
+  </div>
 </section>
 
-<section>
+<section class="container">
   <h3>Projects</h3>
 
   <div class="project">
-    <h4>Comparative Analysis of SMOTE & Its Variants (Healthcare)</h4>
-    <p>
-      Built a full evaluation pipeline applying 14 SMOTE variants with 10 ML classifiers
-      on imbalanced heart-failure datasets. Achieved best results with
-      <b>CatBoost + SMOTE</b> (F1: 0.88, ROC-AUC: 0.93). Contributed to a
-      conference-accepted research publication.
-    </p>
-    <p><b>Tech:</b> Python, Scikit-Learn, Imbalanced-Learn, Pandas, NumPy, CatBoost, XGBoost</p>
+    <h4>A Comparative Study of SMOTE Variants in Healthcare ML</h4>
+    <ul>
+      <li><b>Problem:</b> Severe class imbalance in heart-failure datasets</li>
+      <li><b>Approach:</b> Evaluated 14 SMOTE variants with 10 ML classifiers using F1, ROC-AUC, PR-AUC, CI-95%</li>
+      <li><b>Impact:</b> CatBoost + SMOTE achieved F1 = 0.88 and ROC-AUC = 0.93</li>
+      <li><b>Outcome:</b> Conference-accepted research publication</li>
+    </ul>
+    <p class="tech">Python · Scikit-Learn · Imbalanced-Learn · CatBoost · XGBoost</p>
   </div>
 
   <div class="project">
     <h4>Object Detection in Images</h4>
-    <p>
-      Developed an end-to-end YOLOv8 object detection pipeline enabling real-time
-      inference with confidence filtering, NMS, and visualization of annotated detections.
-    </p>
-    <p><b>Tech:</b> Python, YOLOv8n, YOLOv8s</p>
+    <ul>
+      <li><b>Problem:</b> Real-time detection and visualization of objects in images</li>
+      <li><b>Approach:</b> Built YOLOv8-based inference pipeline with confidence filtering and NMS</li>
+      <li><b>Impact:</b> Real-time annotated detections with extensible evaluation framework</li>
+    </ul>
+    <p class="tech">Python · YOLOv8n · YOLOv8s</p>
   </div>
 
   <div class="project">
-    <h4>SMS Spam Filtering</h4>
-    <p>
-      Built an NLP-based spam classifier on 5,500+ SMS messages achieving
-      <b>96% accuracy</b>. Reduced false positives by 22% and preprocessing
-      time by 50% using optimized TF-IDF and NLTK pipelines.
-    </p>
-    <p><b>Tech:</b> Python, Scikit-Learn, Pandas, NLTK, TF-IDF</p>
+    <h4>SMS Spam Filtering using NLP</h4>
+    <ul>
+      <li><b>Problem:</b> Accurate spam detection in noisy SMS data</li>
+      <li><b>Approach:</b> TF-IDF + Naive Bayes with optimized NLP preprocessing</li>
+      <li><b>Impact:</b> 96% accuracy, 22% reduction in false positives</li>
+    </ul>
+    <p class="tech">Python · Scikit-Learn · Pandas · NLTK</p>
   </div>
-
 </section>
 
-<section>
+<section class="container">
   <h3>Experience</h3>
 
   <div class="project">
     <h4>Accenture – Data Analytics & Visualization Simulation</h4>
     <p>
-      Cleaned and modeled 75,000+ rows of business data, improving client
-      decision-making efficiency by 15%. Built dashboards and delivered
-      presentations increasing engagement by 20%.
+      Cleaned and modeled 75,000+ rows of business data, improving decision-making
+      efficiency by 15% and increasing stakeholder engagement by 20%.
     </p>
   </div>
 
   <div class="project">
     <h4>Walmart Global Tech – Advanced Software Engineering Simulation</h4>
     <p>
-      Improved database query efficiency by 35% and solved real-world
-      DSA and system design challenges, accelerating development cycles by 25%.
+      Improved database query efficiency by 35% and solved real-world system
+      design and DSA challenges.
     </p>
   </div>
-</section>
-
-<section>
-  <h3>Education</h3>
-  <p><b>B.E – CSE (AI & ML)</b>, Chandigarh University (2022–2026)</p>
-  <p>CGPA: 7.62 | Class XII: 94.9% | Class X: CGPA 10</p>
-</section>
-
-<section>
-  <h3>Certifications</h3>
-  <ul>
-    <li>Oracle Cloud Infrastructure 2024 – Generative AI Professional</li>
-    <li>Deep Learning for Developers – Infosys Springboard</li>
-    <li>Predictive Analytics using IBM SPSS Modeler (Advanced)</li>
-  </ul>
 </section>
 
 <footer>
@@ -117,3 +123,4 @@
 
 </body>
 </html>
+
